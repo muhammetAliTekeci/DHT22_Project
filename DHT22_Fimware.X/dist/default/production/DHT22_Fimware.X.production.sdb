@@ -1,0 +1,306 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877 ]
+[d frameptr 0 ]
+"41 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
+[e E878 . `uc
+StartTransmitState 1
+WaitFirstTransmitState 2
+CheckresponseState 3
+StartReadState 4
+ParseCollectingDateState 5
+StopReadState 6
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"71 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
+[v _main main `(v  1 e 1 0 ]
+"105
+[v _SetupConfHandle SetupConfHandle `(v  1 e 1 0 ]
+"173
+[v _InitialVariableHande InitialVariableHande `(v  1 e 1 0 ]
+"179
+[v _OparateSystem OparateSystem `(v  1 e 1 0 ]
+"353
+[v _SerialPrint SerialPrint `(v  1 e 1 0 ]
+"365
+[v _T0int T0int `II(v  1 e 1 0 ]
+"59 C:/Program Files (x86)/Microchip/xc8/v2.10/pic/include\pic16f877.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S123 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S132 . 1 `S123 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES132  1 e 1 @6 ]
+[s S144 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S153 . 1 `S144 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES153  1 e 1 @7 ]
+[s S49 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S58 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S63 . 1 `S49 1 . 1 0 `S58 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES63  1 e 1 @11 ]
+[s S294 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S303 . 1 `S294 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES303  1 e 1 @12 ]
+"627
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"634
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"641
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+[s S316 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+"675
+[s S322 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S326 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[s S329 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+]
+[u S332 . 1 `S316 1 . 1 0 `S322 1 . 1 0 `S326 1 . 1 0 `S329 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES332  1 e 1 @16 ]
+[s S191 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"989
+[s S200 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S204 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S207 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S210 . 1 `S191 1 . 1 0 `S200 1 . 1 0 `S204 1 . 1 0 `S207 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES210  1 e 1 @24 ]
+"1054
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+[s S165 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1270
+[s S172 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S176 . 1 `S165 1 . 1 0 `S172 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES176  1 e 1 @129 ]
+[s S81 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1387
+[u S90 . 1 `S81 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES90  1 e 1 @134 ]
+[s S102 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1449
+[u S111 . 1 `S102 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES111  1 e 1 @135 ]
+[s S273 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1630
+[u S282 . 1 `S273 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES282  1 e 1 @140 ]
+[s S235 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2013
+[s S244 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S248 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S251 . 1 `S235 1 . 1 0 `S244 1 . 1 0 `S248 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES251  1 e 1 @152 ]
+"2068
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"19 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
+[v _Counter Counter `VEul  1 e 4 0 ]
+"21
+[v _OneSecond OneSecond `uc  1 e 1 0 ]
+"41
+[v _Dht22CurrentStatus Dht22CurrentStatus `E878  1 e 1 0 ]
+[s S29 FLAGS 1 `uc 1 SendTxEnable 1 0 :1:0 
+`uc 1 Dht22StartRead 1 0 :1:1 
+]
+"50
+[v _SystemFlag SystemFlag `S29  1 e 1 0 ]
+"52
+[v _PreviousPinValue PreviousPinValue `ui  1 e 2 0 ]
+[v _CurrentPinValue CurrentPinValue `ui  1 e 2 0 ]
+"53
+[v _CurrentShiftBuffer CurrentShiftBuffer `ui  1 e 2 0 ]
+[v _PreviousShiftBuffer PreviousShiftBuffer `ui  1 e 2 0 ]
+"59
+[v _shiftRegIndex shiftRegIndex `uc  1 e 1 0 ]
+"61
+[v _TempArray TempArray `[5]ui  1 e 10 0 ]
+"62
+[v _CheckSum CheckSum `ui  1 e 2 0 ]
+[v _RhDecimalValue RhDecimalValue `ui  1 e 2 0 ]
+[v _TunsignedDecimalValue TunsignedDecimalValue `ui  1 e 2 0 ]
+"63
+[v _TsignedDecimalValue TsignedDecimalValue `i  1 e 2 0 ]
+"64
+[v _RhRealValue RhRealValue `ui  1 e 2 0 ]
+[v _TRealValue TRealValue `ui  1 e 2 0 ]
+"66
+[v _ReceiveIndex ReceiveIndex `ui  1 e 2 0 ]
+"68
+[v _Rhmessage Rhmessage `[20]uc  1 e 20 0 ]
+"69
+[v _Tmessage Tmessage `[25]uc  1 e 25 0 ]
+"71
+[v _main main `(v  1 e 1 0 ]
+{
+"102
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 3 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 5 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 1 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 3 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+"30
+} 0
+"105 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
+[v _SetupConfHandle SetupConfHandle `(v  1 e 1 0 ]
+{
+"171
+} 0
+"179
+[v _OparateSystem OparateSystem `(v  1 e 1 0 ]
+{
+"216
+[v OparateSystem@Idx Idx `ui  1 a 2 1 ]
+"217
+[v OparateSystem@DataPtr DataPtr `*.4ui  1 a 1 0 ]
+"351
+} 0
+"353
+[v _SerialPrint SerialPrint `(v  1 e 1 0 ]
+{
+[v SerialPrint@Text Text `*.26uc  1 p 2 3 ]
+"362
+} 0
+"173
+[v _InitialVariableHande InitialVariableHande `(v  1 e 1 0 ]
+{
+"177
+} 0
+"365
+[v _T0int T0int `II(v  1 e 1 0 ]
+{
+"378
+} 0
