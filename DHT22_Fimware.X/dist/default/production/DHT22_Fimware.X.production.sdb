@@ -24,7 +24,7 @@ StopReadState 6
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"71 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
+"69 C:\Users\Muhammet-PC\Desktop\Projeler\DHT22 Projectt\DHT22_Fimware.X\Source_Files/main.c
 [v _main main `(v  1 e 1 0 ]
 "105
 [v _SetupConfHandle SetupConfHandle `(v  1 e 1 0 ]
@@ -32,9 +32,9 @@ StopReadState 6
 [v _InitialVariableHande InitialVariableHande `(v  1 e 1 0 ]
 "179
 [v _OparateSystem OparateSystem `(v  1 e 1 0 ]
-"353
+"337
 [v _SerialPrint SerialPrint `(v  1 e 1 0 ]
-"365
+"349
 [v _T0int T0int `II(v  1 e 1 0 ]
 "59 C:/Program Files (x86)/Microchip/xc8/v2.10/pic/include\pic16f877.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
@@ -236,18 +236,13 @@ StopReadState 6
 [v _CheckSum CheckSum `ui  1 e 2 0 ]
 [v _RhDecimalValue RhDecimalValue `ui  1 e 2 0 ]
 [v _TunsignedDecimalValue TunsignedDecimalValue `ui  1 e 2 0 ]
-"63
-[v _TsignedDecimalValue TsignedDecimalValue `i  1 e 2 0 ]
 "64
-[v _RhRealValue RhRealValue `ui  1 e 2 0 ]
-[v _TRealValue TRealValue `ui  1 e 2 0 ]
-"66
 [v _ReceiveIndex ReceiveIndex `ui  1 e 2 0 ]
-"68
+"66
 [v _Rhmessage Rhmessage `[20]uc  1 e 20 0 ]
-"69
+"67
 [v _Tmessage Tmessage `[25]uc  1 e 25 0 ]
-"71
+"69
 [v _main main `(v  1 e 1 0 ]
 {
 "102
@@ -286,21 +281,21 @@ StopReadState 6
 [v OparateSystem@Idx Idx `ui  1 a 2 1 ]
 "217
 [v OparateSystem@DataPtr DataPtr `*.4ui  1 a 1 0 ]
-"351
+"335
 } 0
-"353
+"337
 [v _SerialPrint SerialPrint `(v  1 e 1 0 ]
 {
 [v SerialPrint@Text Text `*.26uc  1 p 2 3 ]
-"362
+"346
 } 0
 "173
 [v _InitialVariableHande InitialVariableHande `(v  1 e 1 0 ]
 {
 "177
 } 0
-"365
+"349
 [v _T0int T0int `II(v  1 e 1 0 ]
 {
-"378
+"362
 } 0

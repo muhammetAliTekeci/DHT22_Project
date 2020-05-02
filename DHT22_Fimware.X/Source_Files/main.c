@@ -60,8 +60,6 @@ unsigned char shiftRegIndex = 0;
 unsigned int TestArray[20];
 uint8_t TempArray[5];
 unsigned int CheckSum ,RhDecimalValue, RhFractionVal, TFractionVal, TunsignedDecimalValue;
-signed int TsignedDecimalValue;
-unsigned int  RhRealValue, TRealValue;
 unsigned int Index;
 unsigned int ReceiveIndex;
 
@@ -84,17 +82,19 @@ void main(void)
             
             SerialPrint( Rhmessage );
   
-            if( TsignedDecimalValue < 0 )
-                Tmessage[9] ='-';
+            if( TunsignedDecimalValue > 0x8000 )
+               {
+                    TunsignedDecimalValue -= ( 1<< 15 );
+                    Tmessage[9] ='-';
+               }
             else
                 Tmessage[9] =' ';
+            
             Tmessage[10] = (TunsignedDecimalValue/100)%10 + 48; 
             Tmessage[11] = (TunsignedDecimalValue/10)%10 + 48; 
             Tmessage[13] = (TunsignedDecimalValue%10) + 48; 
             
             SerialPrint( Tmessage );
-            
-            
             
             SystemFlag.SendTxEnable = FALSE;
         }
@@ -309,25 +309,9 @@ void OparateSystem( void )
                     RhDecimalValue <<= 8;
                     RhDecimalValue |= TempArray[ 1 ];
                     
-                    RhRealValue = RhDecimalValue;
-                    RhRealValue *= 0.1f;
-                    
-                    
                     TunsignedDecimalValue = TempArray[ 2 ];
                     TunsignedDecimalValue <<= 8;
                     TunsignedDecimalValue |= TempArray[ 3 ];
-                    
-                    if( TunsignedDecimalValue > 0x8000 )
-                    {
-                        TunsignedDecimalValue -= (1 << 15);
-                        TsignedDecimalValue = -TunsignedDecimalValue;
-                    }
-                    else
-                        TsignedDecimalValue = TunsignedDecimalValue;
-                    
-                    
-                    //RhRealValue = TdecimalValue;
-                    TRealValue *= 0.1f;
                     
                     SystemFlag.SendTxEnable = TRUE;
                     Dht22CurrentStatus = StopReadState;
